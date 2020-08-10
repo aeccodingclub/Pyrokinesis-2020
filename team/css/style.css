@@ -1,0 +1,199 @@
+
+.site-header {
+    position: relative;
+    width: 100%;
+}
+
+.site-header figure {
+    margin: 0;
+    padding: 0;
+}
+
+.site-header figure img {
+    max-width: 100%;
+}
+
+.site-header .header-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.header-bar .site-branding {
+    margin-bottom: 0;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.header-bar .site-branding a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
+.site-navigation {
+    position: absolute;
+    top: -11px;
+    right: 15px;
+    z-index: 9999;
+    width: 100%;
+    height: 22px;
+    overflow: hidden;
+    list-style: none;
+    transition: all .35s;
+    color: hsl(0, 0%, 100%);
+}
+
+.site-navigation.show {
+    height: auto;
+}
+
+.site-navigation ul {
+    position: fixed;
+    top: 0px;
+    left: -320px;
+    z-index: 9999;
+    width: 320px;
+    height: 100vh;
+    overflow-x: scroll;
+    padding: 30px;
+    margin: 0;
+    background: #000000;
+    transition: all 0.35s;
+}
+
+.site-navigation.show ul {
+    left: 0;
+}
+
+.site-navigation ul li {
+    display: block;
+    padding: 15px 0;
+}
+
+
+.site-navigation ul li a {
+    display: block;
+    color: #fff;
+    transition: all 0.35s;
+    text-decoration: none;
+    font-size: 20px;
+    padding-left:40px;
+}
+
+
+@media screen and (min-width: 992px) {
+    .header-bar .site-branding {
+        margin-left: 35px;
+    }
+
+    .site-navigation {
+        position: relative;
+        top: auto;
+        right: auto;
+        height: auto;
+        padding-right: 35px;
+        background: transparent;
+    }
+
+    .site-navigation ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        overflow: auto;
+        background: transparent;
+    }
+
+    .site-navigation ul li {
+        padding: 0;
+    }
+	
+    .site-navigation ul li a {
+        color: #fff;
+    }
+
+	.site-navigation ul li a:hover {
+        margin: 5px;
+		background-color: #87ceeb;
+		color: #fff;
+		padding: 8px;
+		border-radius: 20px;
+    }
+}
+
+.bg{
+	background-image: url("bg.jpg");
+	background-size: 100% auto;
+}
+
+.image
+{
+	max-width:100%;
+	height:auto;
+	border-radius:50%;
+	transition: 0.8s;
+	filter:grayscale(100%);
+	
+}
+.image:hover
+{
+	border-radius:10%;
+	filter:grayscale(0%);
+}
+.words
+{
+	width:100%;
+	text-align:center;
+}
+
+.layer
+{
+	color:#fff;
+	font-family: 'Lobster', cursive;
+}
+.layer:hover
+{
+	color: #fc0330;
+	font-family: 'Lobster', cursive;
+}
+
+
+.chr
+{
+	background-color: #fc0330;
+
+}
+.footer
+{
+	background-color: #fc0330;
+	width:100%;
+	height:20px;
+
+
+}
+
+.info
+{
+	display:none;
+	color: #777;
+}
+
+div pre a{
+	color: black;
+	cursor: text;
+}
+
+div pre a:hover{
+	color: black;
+	text-decoration: none;
+	cursor: text;
+}
